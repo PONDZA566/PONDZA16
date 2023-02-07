@@ -17,3 +17,16 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int *arr[] = {&a,&b,&c,&d};
+	for(int i=0 ;i < 4 ;i++){
+		int x = rand()%4;
+		int temp = *arr[x];
+		*arr[x] = *arr[i];
+		*arr[i] = temp;
+		
+		
+	}
+
+}
